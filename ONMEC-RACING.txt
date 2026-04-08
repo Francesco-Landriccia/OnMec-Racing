@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="it" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONMEC Racing | Engineering Excellence</title>
+
+    <meta name="description" content="ONMEC Racing: team studenti ITT Jannuzzi, progettazione e produzione di monoposto CO2 F1 in scala. Specifiche tecniche, innovazione e partnership di eccellenza.">
+    <meta name="keywords" content="ONMEC Racing, STEM Racing, ITT Jannuzzi, monoposto CO2, aerodinamica, ingegneria, progettazione, studenti">
+    <meta name="author" content="Team ONMEC Racing">
+    <meta name="theme-color" content="#0a0a0a">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'onmec-red': '#FF0000', 'onmec-dark': '#0a0a0a' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .hero-gradient { background: radial-gradient(circle at center, #220000 0%, #0a0a0a 100%); }
+        .logo-shadow { filter: drop-shadow(0px 0px 12px rgba(0,0,0,0.8)); }
+        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.1); }
+        .stat-card:hover, .team-card:hover { transform: translateY(-10px) scale(1.03); transition: all 0.3s ease; }
+        @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+        .fade-in { animation: fade-in 1s ease forwards; }
+    </style>
+</head>
+<body class="bg-onmec-dark text-white font-sans antialiased">
+
+    <nav class="fixed w-full z-50 p-6 bg-onmec-dark/90 backdrop-blur-lg border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center gap-4">
+                <img src="LOGO-TEAM.png" alt="Logo ONMEC Racing Team" class="h-12 object-contain">
+                <span class="text-3xl md:text-4xl font-black italic text-onmec-red uppercase tracking-tighter">ONMEC<span class="text-white ml-1">RACING</span></span>
+            </div>
+            <ul class="hidden md:flex space-x-8 text-[13px] font-bold uppercase tracking-widest text-zinc-400">
+                <li><a href="#hero" class="hover:text-onmec-red transition">Home</a></li>
+                <li><a href="#technical-specs" class="hover:text-onmec-red transition">Specifiche</a></li>
+                <li><a href="#heritage" class="hover:text-onmec-red transition">Istituto</a></li>
+                <li><a href="#team" class="hover:text-onmec-red transition">Team</a></li>
+                <li><a href="#partners" class="hover:text-onmec-red transition">Partner</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hero" class="relative min-h-screen flex flex-col items-center justify-center hero-gradient px-6 pt-28 overflow-hidden text-center md:text-left">
+        <div class="max-w-4xl mx-auto flex flex-col items-center md:items-start gap-10">
+            <div class="fade-in">
+                <span class="inline-block py-2 px-4 rounded-md bg-onmec-red/40 text-onmec-red text-sm font-bold uppercase mb-4 tracking-widest">Progetto STEM Racing • ITT Jannuzzi</span>
+                <h1 class="text-5xl md:text-7xl font-extrabold uppercase leading-tight mb-6 tracking-tight">
+                    DA INGEGNERIA <span class="text-onmec-red italic">A PERFORMANCE REALE</span>
+                </h1>
+                <p class="text-zinc-300 text-lg md:text-xl mb-6 max-w-2xl">
+                    ONMEC Racing trasforma concetti teorici, design e modellazione CAD in monoposto CO₂ in scala ad alte prestazioni.
+                </p>
+                <a href="#technical-specs" class="bg-onmec-red text-white px-8 py-3 font-bold rounded-full hover:scale-105 transition shadow-xl shadow-onmec-red/25 uppercase text-lg">
+                    Esplora il Progetto
+                </a>
+            </div>
+            <div class="relative fade-in w-full max-w-xl mt-6">
+                <img src="MODELLINO-MACCHINA.png" alt="Prototipo ONMEC Racing" class="w-full object-contain drop-shadow-[0_40px_70px_rgba(255,0,0,0.45)] transform hover:scale-110 transition duration-700">
+            </div>
+        </div>
+    </section>
+
+    <section id="technical-specs" class="py-36 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold uppercase mb-14 italic">Scheda Tecnica</h2>
+            <div class="grid grid-cols-2 md:grid-cols-5 gap-6">
+                <div class="glass p-8 rounded-3xl stat-card">
+                    <span class="text-onmec-red font-extrabold text-5xl block mb-2">48g</span>
+                    <span class="text-xs uppercase text-zinc-500 font-bold tracking-widest">Peso Esatto</span>
+                </div>
+                <div class="glass p-8 rounded-3xl border-onmec-red/30 stat-card flex flex-col justify-center bg-onmec-red/5">
+                    <span class="text-white font-black text-2xl uppercase italic leading-none block mb-2">PRODUZIONE<br>CNC</span>
+                    <span class="text-[10px] uppercase text-onmec-red font-bold tracking-tighter">Precisione Meccanica</span>
+                </div>
+                <div class="glass p-8 rounded-3xl stat-card">
+                    <span class="text-onmec-red font-extrabold text-5xl block mb-2">CO₂</span>
+                    <span class="text-xs uppercase text-zinc-500 font-bold tracking-widest">Propulsione</span>
+                </div>
+                <div class="glass p-8 rounded-3xl stat-card">
+                    <span class="text-onmec-red font-extrabold text-5xl block mb-2">3D</span>
+                    <span class="text-xs uppercase text-zinc-500 font-bold tracking-widest">Prototipazione</span>
+                </div>
+                <div class="glass p-8 rounded-3xl stat-card">
+                    <span class="text-onmec-red font-extrabold text-5xl block mb-2">CAD</span>
+                    <span class="text-xs uppercase text-zinc-500 font-bold tracking-widest">Design</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="heritage" class="py-36 px-6 bg-zinc-900/40">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="bg-white p-16 rounded-[3rem] shadow-2xl text-center group relative overflow-hidden">
+                <img src="LOGO-SCUOLA.png" alt="Logo ITT Jannuzzi" class="h-56 w-auto object-contain mx-auto transition duration-500 group-hover:scale-110 mb-8">
+                <a href="https://ittjannuzzi.edu.it/" target="_blank" class="inline-flex items-center gap-2 bg-onmec-dark text-white px-6 py-3 rounded-xl font-bold hover:bg-onmec-red transition uppercase text-sm">
+                    Visita il Sito <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                </a>
+            </div>
+            <div>
+                <h2 class="text-5xl font-extrabold uppercase mb-6 italic italic">ITT "Sen. O. Jannuzzi" <span class="text-onmec-red">Andria</span></h2>
+                <p class="text-zinc-300 text-xl leading-relaxed">Fondata nel 1958, la nostra scuola è il cuore della formazione tecnica in Puglia. Il team ONMEC Racing ne rappresenta l'eccellenza ingegneristica.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="py-36 px-6 bg-white">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-zinc-900 text-5xl font-extrabold uppercase mb-20 italic">Powered By</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                <div class="flex flex-col items-center p-8 border border-zinc-100 rounded-2xl hover:shadow-xl transition group">
+                    <img src="CREA3D.png" class="h-28 object-contain mb-6 transition group-hover:scale-105">
+                    <a href="https://www.crea3d.com" target="_blank" class="text-xs font-black uppercase tracking-widest text-zinc-400 hover:text-onmec-red flex items-center gap-1">Visita il Sito &rarr;</a>
+                </div>
+                <div class="flex flex-col items-center p-8 border border-zinc-100 rounded-2xl hover:shadow-xl transition group">
+                    <img src="CAMPANILE-SERVICE.png" class="h-28 object-contain mb-6 transition group-hover:scale-105">
+                    <span class="text-xs font-black uppercase tracking-widest text-zinc-300">Partner Tecnico</span>
+                </div>
+                <div class="flex flex-col items-center p-8 border border-zinc-100 rounded-2xl hover:shadow-xl transition group">
+                    <img src="LISI-MARMI.png" class="h-32 object-contain mb-6 transition group-hover:scale-105">
+                    <span class="text-xs font-black uppercase tracking-widest text-zinc-300">Partner Tecnico</span>
+                </div>
+                <div class="flex flex-col items-center p-8 border border-zinc-100 rounded-2xl hover:shadow-xl transition group">
+                    <img src="FDMEC.png" class="h-32 object-contain mb-6 transition group-hover:scale-105">
+                    <a href="https://www.fdmecsrl.it/" target="_blank" class="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2 rounded-lg font-bold hover:bg-onmec-red transition uppercase text-[10px]">
+                        Visita il Sito FDMEC
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-16 border-t border-white/5 text-center bg-black">
+        <img src="LOGO-TEAM.png" alt="Logo ONMEC" class="h-16 mx-auto mb-6 opacity-30">
+        <p class="text-[10px] uppercase tracking-[0.5em] font-bold text-zinc-600">© 2026 ONMEC Racing Team – Engineering & Innovation</p>
+    </footer>
+
+</body>
+</html>
