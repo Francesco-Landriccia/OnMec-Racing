@@ -107,7 +107,7 @@
                 </a>
             </div>
             <div>
-                <h2 class="text-5xl font-extrabold uppercase mb-6 italic italic">ITT "Sen. O. Jannuzzi" <span class="text-onmec-red">Andria</span></h2>
+                <h2 class="text-5xl font-extrabold uppercase mb-6 italic">ITT "Sen. O. Jannuzzi" <span class="text-onmec-red">Andria</span></h2>
                 <p class="text-zinc-300 text-xl leading-relaxed">Fondata nel 1958, la nostra scuola è il cuore della formazione tecnica in Puglia. Il team ONMEC Racing ne rappresenta l'eccellenza ingegneristica.</p>
             </div>
         </div>
@@ -131,9 +131,9 @@
                     <span class="text-xs font-black uppercase tracking-widest text-zinc-300">Partner Tecnico</span>
                 </div>
                 <div class="flex flex-col items-center p-8 border border-zinc-100 rounded-2xl hover:shadow-xl transition group">
-                    <img src="FDMEC.png" class="h-32 object-contain mb-6 transition group-hover:scale-105">
-                    <a href="https://www.fdmecsrl.it/" target="_blank" class="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2 rounded-lg font-bold hover:bg-onmec-red transition uppercase text-[10px]">
-                        Visita il Sito FDMEC
+                    <img src="SEMATECH.png" class="h-32 object-contain mb-6 transition group-hover:scale-105">
+                    <a href="https://www.fdmech.it" target="_blank" class="inline-flex items-center gap-2 bg-zinc-900 text-white px-5 py-2 rounded-lg font-bold hover:bg-onmec-red transition uppercase text-[10px]">
+                        Visita il Sito FDMECH
                     </a>
                 </div>
             </div>
